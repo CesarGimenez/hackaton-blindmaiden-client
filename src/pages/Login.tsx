@@ -29,7 +29,7 @@ const Login: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 to-purple-400 min-h-screen">
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
         <h2 className="text-center text-3xl font-extrabold text-purple-600">
           Inicia Sesión
