@@ -15,13 +15,11 @@ const MyTreatment: React.FC = () => {
       <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-bold text-purple-600 mb-4">Progreso del Tratamiento</h2>
         
-        {/* Sección de duración del tratamiento */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-gray-700">Duración del Tratamiento</h3>
           <p className="text-sm text-gray-600 mt-2">{treatment?.duration || 'N/A'}</p>
         </div>
         
-        {/* Sección de medicamentos */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-gray-700">Medicamentos</h3>
           <ul className="mt-2">
@@ -33,13 +31,11 @@ const MyTreatment: React.FC = () => {
           </ul>
         </div>
 
-        {/* Sección de alimentación */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-gray-700">Alimentación Recomendada</h3>
           <p className="text-sm text-gray-600 mt-2">{treatment?.diet}</p>
         </div>
 
-        {/* Sección de actividades físicas */}
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-gray-700">Actividades Físicas</h3>
           <ul className="mt-2">
@@ -52,7 +48,6 @@ const MyTreatment: React.FC = () => {
           </ul>
         </div>
 
-        {/* Progreso visual */}
         <div className="mt-8">
           <h3 className="text-xl font-semibold text-gray-700">Progreso General</h3>
           <div className="w-full bg-gray-200 rounded-full h-4 mt-4">

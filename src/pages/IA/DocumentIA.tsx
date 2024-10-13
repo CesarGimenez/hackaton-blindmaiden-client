@@ -24,7 +24,6 @@ const DocumentIA: React.FC = () => {
     setUploading(true);
     setError(null);
 
-    // Simulación de subida de archivo al servidor (aquí lo conectarías con tu backend)
     try {
       const formData = new FormData();
       formData.append("file", selectedFile);
@@ -32,8 +31,7 @@ const DocumentIA: React.FC = () => {
       const response = await UploadDocumentAI(formData);
       console.log(response);
       if (response.aiMessage) {
-        // Aquí obtendrías la respuesta de la IA
-        setAiResponse(response.aiMessage); // Suponiendo que el backend retorna 'aiMessage' con el análisis del documento.
+        setAiResponse(response.aiMessage);
       } else {
         setError("Error al subir el archivo.");
       }
@@ -51,7 +49,6 @@ const DocumentIA: React.FC = () => {
         Subir Documento para Análisis
       </h1>
 
-      {/* Formulario de subida de documento */}
       <form
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto"
@@ -90,7 +87,6 @@ const DocumentIA: React.FC = () => {
                 </p>
                 <p className="text-xs text-gray-500">PDF o DOC (máx. 10 MB)</p>
               </div>
-              {/* Input de tipo file oculto */}
               <input
                 id="file"
                 type="file"

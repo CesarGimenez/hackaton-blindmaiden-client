@@ -54,7 +54,6 @@ const MyFolder: React.FC = () => {
             key={doc.id}
             className="bg-white rounded-lg shadow-md p-4 flex flex-col"
           >
-            {/* Vista previa del documento */}
             <div className="flex justify-center mb-4">
               <img
                 src={doc.previewUrl}
@@ -63,7 +62,6 @@ const MyFolder: React.FC = () => {
               />
             </div>
 
-            {/* Información del documento */}
             <div className="text-center">
               <h3 className="text-xl font-bold text-gray-700 mb-2">
                 {doc.name}
@@ -74,7 +72,6 @@ const MyFolder: React.FC = () => {
               </p>
             </div>
 
-            {/* Botón para ver más o descargar */}
             <div className="mt-4">
               <button className="w-full bg-purple-600 text-white py-2 rounded-lg shadow-md hover:bg-purple-700 transition duration-200">
                 Ver documento

@@ -121,7 +121,6 @@ const AddApointment = ({ open, handleClose, handleAddAppointment }: Props) => {
               </div>
             }
 
-            {/* Botón para agregar cita */}
             <button
               type="submit"
               className="bg-purple-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-purple-700 transition duration-200"

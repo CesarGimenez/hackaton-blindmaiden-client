@@ -2,7 +2,7 @@ import AddApointment from "@/components/Modal/AddApointment";
 import React, { useState } from "react";
 
 import { format, parseISO } from "date-fns";
-import { es } from "date-fns/locale"; // Importar la localización en español
+import { es } from "date-fns/locale";
 import { AddActivityForm } from "@/components";
 import { motion } from "framer-motion";
 import { GetInfoPatientApi, UpdateTreatmentApi } from "@/api/patients.api";
@@ -36,8 +36,8 @@ const formatTime = (time: string) => {
 
 interface Activity {
   name: string;
-  duration: string; // Duración de la actividad (ej: "30 minutos")
-  frequency: string; // Frecuencia (ej: "Diariamente", "3 veces por semana")
+  duration: string;
+  frequency: string;
 }
 
 interface Appointment {

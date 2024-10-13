@@ -66,7 +66,6 @@ const AddActivityForm = ({ open, handleClose, handleAddActivity }: Props) => {
               Agregar Nueva Actividad
             </h3>
 
-            {/* Nombre de la actividad */}
             <div className="mb-4">
               <label className="block text-gray-700 font-semibold mb-2">
                 Nombre de la Actividad
@@ -81,7 +80,6 @@ const AddActivityForm = ({ open, handleClose, handleAddActivity }: Props) => {
               />
             </div>
 
-            {/* Duración de la actividad */}
             <div className="mb-4">
               <label className="block text-gray-700 font-semibold mb-2">
                 Duración
@@ -96,7 +94,6 @@ const AddActivityForm = ({ open, handleClose, handleAddActivity }: Props) => {
               />
             </div>
 
-            {/* Frecuencia de la actividad */}
             <div className="mb-4">
               <label className="block text-gray-700 font-semibold mb-2">
                 Frecuencia
@@ -111,7 +108,6 @@ const AddActivityForm = ({ open, handleClose, handleAddActivity }: Props) => {
               />
             </div>
 
-            {/* Botón para agregar actividad */}
             <button
               type="submit"
               className="bg-purple-600 text-white py-2 px-4 rounded-md shadow-md hover:bg-purple-700 transition duration-200"
